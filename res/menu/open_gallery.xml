@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/save" 
+        android:title="@string/save"
+        android:orderInCategory="1"
+        android:visible="true"
+        android:showAsAction="always"/>    
+    
+    <item android:id="@+id/process_menu" 
+        android:title="@string/process"
+        android:orderInCategory="2"
+        android:visible="true"
+        android:showAsAction="always">
+        <menu>
+         <group android:id="@+id/group_process">
+            <item android:id="@+id/grayscale" android:title="@string/grayscale"  android:showAsAction="never" />
+            <item android:id="@+id/binary" android:title="@string/binary"  android:showAsAction="never" android:checked="true" />
+            <item android:id="@+id/contrast" android:title="@string/contrast"  android:showAsAction="never" />
+            <item android:id="@+id/sharpen" android:title="@string/sharpen"  android:showAsAction="never" />
+            <item android:id="@+id/smooth" android:title="@string/smooth"  android:showAsAction="never" android:checked="true" />
+            <item android:id="@+id/emboss" android:title="@string/emboss"  android:showAsAction="never" />
+         </group>
+        </menu>
+    </item>
+    
+    <item android:id="@+id/analyse_menu" 
+        android:title="@string/analyse"
+        android:orderInCategory="3"
+        android:visible="true"
+        android:showAsAction="always">
+        <menu>
+        <group android:id="@+id/group_analyse">
+            <item android:id="@+id/histogram" android:title="@string/histogram"  android:showAsAction="never" />
+            <item android:id="@+id/color_histogram" android:title="@string/color_histogram"  android:showAsAction="never" />
+            <item android:id="@+id/equalize" android:title="@string/equalize"  android:showAsAction="never" />
+            <item android:id="@+id/edge_detect" android:title="@string/edge_detect"  android:showAsAction="never" android:checked="true" />
+        </group>
+        </menu>
+    </item>
+</menu>
